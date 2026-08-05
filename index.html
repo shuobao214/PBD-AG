@@ -54,7 +54,7 @@
     </header>
 
     <section class="teaser page-width" aria-labelledby="teaser-caption">
-      <img src="static/images/overview.png" alt="PBD-AG overview: frontier exploration, fixture inspection, grounded RGB-D observations, and baseline-delta scene memory">
+      <img src="static/images/overview-horizontal.png" alt="PBD-AG overview: frontier exploration, fixture inspection, grounded RGB-D observations, and baseline-delta scene memory">
       <p id="teaser-caption" class="lead-caption"><strong>PBD-AG</strong> lets a robot explore once, inspect what matters, and revise object state with evidence—without forgetting the stable structure of the world.</p>
     </section>
 
@@ -70,7 +70,7 @@
     <section id="method" class="paper-section page-width">
       <div class="section-intro"><p class="kicker">Method</p><h2>A versioned scene graph grounded by active perception.</h2><p>PBD-AG connects online exploration, fixture-centered inspection, hierarchical grounding, and persistent graph maintenance in one auditable loop.</p></div>
       <figure class="figure-card wide-figure">
-        <img src="static/images/architecture.png" alt="Modular architecture of PBD-AG" loading="lazy">
+        <img src="static/images/architecture-white.png" alt="Modular architecture of PBD-AG" loading="lazy">
         <figcaption>The PBD-AG pipeline transforms embodied RGB-D and LiDAR observations into a versioned stable-fixture baseline and an append-only log of object events.</figcaption>
       </figure>
       <div class="method-steps">
@@ -83,7 +83,7 @@
 
     <section class="paper-section page-width feature-row">
       <div class="feature-copy"><p class="kicker">Uncertainty-aware inspection</p><h2>A miss is not evidence unless the object was observable.</h2><p>The visibility gate rejects negative evidence when a predicted object lies outside the view frustum, is occluded, or has insufficient expected pixel support. When more evidence is needed, the robot selects only reachable, informative, and safe viewpoints.</p></div>
-      <figure class="figure-card"><img src="static/images/visibility-inspection.png" alt="Geometric visibility gate and reachable active viewpoint selection" loading="lazy"></figure>
+      <figure class="figure-card"><img src="static/images/visibility-inspection-white.png" alt="Geometric visibility gate and reachable active viewpoint selection" loading="lazy"></figure>
     </section>
 
     <section id="results" class="paper-section page-width">
@@ -93,27 +93,32 @@
         <div><strong>11 / 12</strong><span>Event recall</span></div><div><strong>0.014</strong><span>False absence</span></div>
       </div>
       <div class="result-grid">
-        <figure class="figure-card"><img src="static/images/coarse-results.png" alt="Coarse fixture F1 comparison across three environments" loading="lazy"><figcaption>Highest mean coarse-fixture F1 across all three environments.</figcaption></figure>
-        <figure class="figure-card"><img src="static/images/dynamic-results.png" alt="Dynamic identity and event recall comparison" loading="lazy"><figcaption>Persistent IDs and visibility-gated updates improve identity continuity and event recall.</figcaption></figure>
+        <figure class="figure-card"><img src="static/images/coarse-results-white.png" alt="Coarse fixture F1 comparison across three environments" loading="lazy"><figcaption>Highest mean coarse-fixture F1 across all three environments.</figcaption></figure>
+        <figure class="figure-card"><img src="static/images/dynamic-results-white.png" alt="Dynamic identity and event recall comparison" loading="lazy"><figcaption>Persistent IDs and visibility-gated updates improve identity continuity and event recall.</figcaption></figure>
       </div>
     </section>
 
     <section id="demos" class="paper-section page-width">
       <div class="section-intro"><p class="kicker">Demonstrations</p><h2>From simulation to a physical robot.</h2><p>The same persistent memory abstraction supports autonomous mapping, inspection, and object-state revision across both settings.</p></div>
       <div class="video-grid">
-        <figure><video controls muted playsinline preload="metadata" poster="static/images/overview.png"><source src="static/videos/simulation-demo.mp4" type="video/mp4">Your browser does not support MP4 video.</video><figcaption><strong>Simulation.</strong> Autonomous exploration, inspection, and persistent updates in unseen indoor environments.</figcaption></figure>
-        <figure><video controls muted playsinline preload="metadata" poster="static/images/physical-deployment.png"><source src="static/videos/real-robot-demo.mp4" type="video/mp4">Your browser does not support MP4 video.</video><figcaption><strong>Physical deployment.</strong> Onboard RGB-D and LiDAR sensing materialize a hierarchical scene graph.</figcaption></figure>
+        <figure><video controls muted playsinline preload="metadata" poster="static/images/overview-horizontal.png"><source src="static/videos/simulation-demo.mp4" type="video/mp4">Your browser does not support MP4 video.</video><figcaption><strong>Simulation.</strong> Autonomous exploration, inspection, and persistent updates in unseen indoor environments.</figcaption></figure>
+        <figure><video controls muted playsinline preload="metadata" poster="static/images/physical-deployment-white.png"><source src="static/videos/real-robot-demo.mp4" type="video/mp4">Your browser does not support MP4 video.</video><figcaption><strong>Physical deployment.</strong> Onboard RGB-D and LiDAR sensing materialize a hierarchical scene graph.</figcaption></figure>
       </div>
     </section>
 
     <section class="paper-section page-width deployment">
       <div class="section-intro"><p class="kicker">Physical deployment</p><h2>A traceable world model built from onboard sensing.</h2></div>
-      <figure class="figure-card wide-figure"><img src="static/images/physical-deployment.png" alt="Physical robot exploration, inspection, mapping, and hierarchical graph output" loading="lazy"></figure>
+      <figure class="figure-card wide-figure"><img src="static/images/physical-deployment-white.png" alt="Physical robot exploration, inspection, mapping, and hierarchical graph output" loading="lazy"></figure>
     </section>
 
     <section id="citation" class="paper-section narrow citation">
-      <h2>BibTeX</h2>
-      <pre><code>@article{bao2026pbd_ag,
+      <div class="citation-heading">
+        <h2>BibTeX</h2>
+        <button class="copy-button" type="button" data-copy-bibtex aria-label="Copy BibTeX citation">
+          <span aria-hidden="true">▣</span> <span data-copy-label>Copy</span>
+        </button>
+      </div>
+      <pre><code id="bibtex-code">@article{bao2026pbd_ag,
   title   = {PBD-AG: Persistent Baseline-Delta Active Graphs with
              Uncertainty-Aware Inspection for Long-Horizon Service Robots},
   author  = {Bao, Shuo and Dong, Wei and Zhang, Shuyue and Shang, Ming and
@@ -126,5 +131,29 @@
   </main>
 
   <footer><p>PBD-AG · Preprint website · 2026</p><p>Website structure adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> and <a href="https://nerfies.github.io">Nerfies</a>.</p></footer>
+  <script>
+    const copyButton = document.querySelector('[data-copy-bibtex]');
+    const bibtexCode = document.querySelector('#bibtex-code');
+    const copyLabel = document.querySelector('[data-copy-label]');
+
+    copyButton?.addEventListener('click', async () => {
+      const citation = bibtexCode?.textContent || '';
+      try {
+        await navigator.clipboard.writeText(citation);
+        copyLabel.textContent = 'Copied';
+        copyButton.classList.add('is-copied');
+        window.setTimeout(() => {
+          copyLabel.textContent = 'Copy';
+          copyButton.classList.remove('is-copied');
+        }, 1800);
+      } catch {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(bibtexCode);
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+    });
+  </script>
 </body>
 </html>
