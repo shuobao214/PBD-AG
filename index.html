@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1220">
+  <meta name="theme-color" content="#ffffff">
   <meta name="title" content="PBD-AG: Persistent Baseline-Delta Active Graphs">
   <meta name="description" content="PBD-AG builds persistent, uncertainty-aware scene graphs for long-horizon service robots through active exploration, fixture inspection, and evidence-gated updates.">
   <meta name="keywords" content="embodied AI, service robots, persistent scene graph, active perception, robot memory, 3D scene understanding">
@@ -19,211 +19,112 @@
   <meta name="twitter:description" content="Persistent robot memory that separates stable fixtures from revisable object events.">
   <meta name="twitter:image" content="https://shuobao214.github.io/PBD-AG/static/images/social-preview.png">
   <meta name="citation_title" content="PBD-AG: Persistent Baseline-Delta Active Graphs with Uncertainty-Aware Inspection for Long-Horizon Service Robots">
-  <meta name="citation_author" content="Bao, Shuo">
-  <meta name="citation_author" content="Dong, Wei">
-  <meta name="citation_author" content="Zhang, Shuyue">
-  <meta name="citation_author" content="Shang, Ming">
-  <meta name="citation_author" content="Huang, Yuchen">
-  <meta name="citation_author" content="Yu, Han">
-  <meta name="citation_author" content="Xu, Chengjie">
-  <meta name="citation_author" content="Bi, Yiheng">
-  <meta name="citation_author" content="Sun, Kai">
-  <meta name="citation_author" content="Sun, Fuchun">
-  <meta name="citation_author" content="Wang, Xinzhou">
-  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_author" content="Bao, Shuo"><meta name="citation_author" content="Dong, Wei">
+  <meta name="citation_author" content="Zhang, Shuyue"><meta name="citation_author" content="Shang, Ming">
+  <meta name="citation_author" content="Huang, Yuchen"><meta name="citation_author" content="Yu, Han">
+  <meta name="citation_author" content="Xu, Chengjie"><meta name="citation_author" content="Bi, Yiheng">
+  <meta name="citation_author" content="Sun, Kai"><meta name="citation_author" content="Sun, Fuchun">
+  <meta name="citation_author" content="Wang, Xinzhou"><meta name="citation_publication_date" content="2026">
   <title>PBD-AG | Persistent Scene Memory for Long-Horizon Service Robots</title>
   <link rel="stylesheet" href="static/css/index.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PBD-AG: Persistent Baseline-Delta Active Graphs with Uncertainty-Aware Inspection for Long-Horizon Service Robots",
-    "description": "A persistent baseline-delta active graph framework for long-horizon robotic scene understanding.",
-    "author": [
-      "Shuo Bao", "Wei Dong", "Shuyue Zhang", "Ming Shang", "Yuchen Huang", "Han Yu",
-      "Chengjie Xu", "Yiheng Bi", "Kai Sun", "Fuchun Sun", "Xinzhou Wang"
-    ],
-    "datePublished": "2026",
-    "url": "https://shuobao214.github.io/PBD-AG/",
-    "image": "https://shuobao214.github.io/PBD-AG/static/images/social-preview.png",
-    "keywords": ["embodied AI", "persistent scene graph", "active perception", "robot memory"],
-    "isAccessibleForFree": true
-  }
-  </script>
 </head>
 <body>
   <nav class="topbar" aria-label="Page navigation">
     <a class="brand" href="#top">PBD-AG</a>
     <div class="nav-links">
-      <a href="#overview">Overview</a>
-      <a href="#method">Method</a>
-      <a href="#demos">Demos</a>
-      <a href="#results">Results</a>
+      <a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#results">Results</a><a href="#demos">Demos</a><a href="#citation">BibTeX</a>
     </div>
   </nav>
 
   <main id="top">
-    <header class="hero section-shell">
-      <div class="status-pill"><span></span> Preprint · Under Review</div>
-      <h1><em>PBD-AG</em>: Persistent Baseline-Delta Active Graphs with Uncertainty-Aware Inspection for Long-Horizon Service Robots</h1>
-      <p class="dek">A persistent world model that lets service robots discover stable structure, actively inspect uncertain fixtures, and revise object state without forgetting what remains.</p>
-
+    <header class="hero page-width">
+      <p class="venue">Preprint · Under Review</p>
+      <h1><span>PBD-AG:</span> Persistent Baseline-Delta Active Graphs with Uncertainty-Aware Inspection for Long-Horizon Service Robots</h1>
       <div class="authors" aria-label="Paper authors">
-        <span>Shuo Bao<sup>*</sup></span>
-        <span>Wei Dong<sup>*</sup></span>
-        <span>Shuyue Zhang</span>
-        <span>Ming Shang</span>
-        <span>Yuchen Huang</span>
-        <span>Han Yu</span>
-        <span>Chengjie Xu</span>
-        <span>Yiheng Bi</span>
-        <span>Kai Sun</span>
-        <span>Fuchun Sun<sup>†</sup></span>
-        <span>Xinzhou Wang<sup>†</sup></span>
+        <span>Shuo Bao<sup>*</sup></span><span>Wei Dong<sup>*</sup></span><span>Shuyue Zhang</span><span>Ming Shang</span>
+        <span>Yuchen Huang</span><span>Han Yu</span><span>Chengjie Xu</span><span>Yiheng Bi</span><span>Kai Sun</span>
+        <span>Fuchun Sun<sup>†</sup></span><span>Xinzhou Wang<sup>†</sup></span>
       </div>
-      <p class="author-note"><sup>*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding authors</p>
-
+      <p class="author-note"><sup>*</sup> Equal contribution &nbsp;&nbsp; <sup>†</sup> Corresponding authors</p>
       <div class="link-row" aria-label="Project links">
-        <span class="disabled-link" title="Available after the public preprint is posted">Paper · Coming soon</span>
-        <span class="disabled-link" title="Available after the public preprint is posted">arXiv · Coming soon</span>
-        <span class="disabled-link" title="Code will be released after acceptance">Code · Coming soon</span>
-        <a href="#demos">Watch demos</a>
+        <a href="#demos"><span class="button-icon">▶</span> Video</a>
+        <a href="#method"><span class="button-icon">◇</span> Method</a>
+        <a href="#citation"><span class="button-icon">“</span> BibTeX</a>
       </div>
     </header>
 
-    <section class="teaser section-shell" aria-labelledby="teaser-title">
-      <div class="eyebrow">Persistent perception in action</div>
-      <h2 id="teaser-title">Explore once. Inspect what matters. Revise with evidence.</h2>
-      <video controls muted playsinline preload="metadata" poster="static/images/overview.png">
-        <source src="static/videos/simulation-demo.mp4" type="video/mp4">
-        Your browser does not support MP4 video.
-      </video>
-      <p class="caption">PBD-AG builds a robot-verified structural baseline, then records object additions, motion, reparenting, and removal as traceable event deltas.</p>
+    <section class="teaser page-width" aria-labelledby="teaser-caption">
+      <img src="static/images/overview.png" alt="PBD-AG overview: frontier exploration, fixture inspection, grounded RGB-D observations, and baseline-delta scene memory">
+      <p id="teaser-caption" class="lead-caption"><strong>PBD-AG</strong> lets a robot explore once, inspect what matters, and revise object state with evidence—without forgetting the stable structure of the world.</p>
     </section>
 
-    <section id="overview" class="section-shell split-section">
-      <div>
-        <div class="eyebrow">Motivation</div>
-        <h2>Robot memory should change at the speed of the world.</h2>
-      </div>
-      <div class="prose">
-        <p>Long-horizon service robots operate in environments where walls and fixtures change slowly, while cups, books, tools, and other task-relevant objects move constantly. Rebuilding a complete semantic map after every revisit fragments identity; treating every missed detection as absence deletes objects that may simply be occluded.</p>
-        <p>PBD-AG separates a verified stable-fixture baseline from a revisable stream of object events. Persistent nodes combine geometry, semantics, appearance, identity, existence, and support relations, while negative evidence is admitted only when an object should truly have been visible.</p>
-      </div>
-    </section>
-
-    <section class="figure-section section-shell">
-      <img src="static/images/overview.png" alt="Overview of frontier exploration, fixture inspection, and baseline-delta object updates" loading="lazy">
-      <p class="caption">Stable fixture identities anchor a dynamic object layer across revisits.</p>
-    </section>
-
-    <section id="method" class="section-shell">
-      <div class="section-heading">
-        <div class="eyebrow">Method</div>
-        <h2>From embodied observations to a versioned scene graph.</h2>
-      </div>
-      <img class="wide-figure" src="static/images/architecture.png" alt="Modular architecture of PBD-AG" loading="lazy">
-      <div class="method-grid">
-        <article>
-          <span>01</span>
-          <h3>Bootstrap</h3>
-          <p>Frontier exploration grows the map from an initially unknown environment and accumulates RGB-D evidence for stable fixture hypotheses.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Inspect</h3>
-          <p>Graph uncertainty schedules reachable fixture-centered viewpoints that balance coverage, travel, collision risk, and observation redundancy.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Ground</h3>
-          <p>Close-range RGB-D observations ground fine objects and attach them to canonical fixture identities through support relations.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Revise</h3>
-          <p>Visibility-gated evidence updates persistent beliefs and appends typed add, move, reparent, and remove events to an audit trail.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-shell inspection-section">
-      <div class="inspection-copy">
-        <div class="eyebrow">Uncertainty-aware inspection</div>
-        <h2>A miss is not evidence unless the object was observable.</h2>
-        <p>The geometric visibility gate rejects negative evidence when the predicted object lies outside the view frustum, is occluded by closer geometry, or has insufficient expected pixel support. When inspection is needed, PBD-AG searches only reachable, informative, and safe viewpoints.</p>
-      </div>
-      <img src="static/images/visibility-inspection.png" alt="Geometric visibility gate and reachable active viewpoint selection" loading="lazy">
-    </section>
-
-    <section id="demos" class="demos section-shell">
-      <div class="section-heading">
-        <div class="eyebrow">Robot demonstrations</div>
-        <h2>One memory model, from simulation to physical robots.</h2>
-      </div>
-      <div class="video-grid">
-        <article>
-          <video controls muted playsinline preload="metadata" poster="static/images/overview.png">
-            <source src="static/videos/simulation-demo.mp4" type="video/mp4">
-          </video>
-          <div class="video-copy">
-            <h3>Simulation rollout</h3>
-            <p>Autonomous mapping, fixture discovery, active inspection, and persistent object-state updates in unseen indoor environments.</p>
-          </div>
-        </article>
-        <article>
-          <video controls muted playsinline preload="metadata" poster="static/images/physical-deployment.png">
-            <source src="static/videos/real-robot-demo.mp4" type="video/mp4">
-          </video>
-          <div class="video-copy">
-            <h3>Physical robot deployment</h3>
-            <p>Onboard RGB-D and LiDAR sensing materialize a hierarchical scene graph while preserving canonical fixture identities.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="results" class="results section-shell">
-      <div class="section-heading">
-        <div class="eyebrow">Controlled evaluation</div>
-        <h2>Stronger persistence under shared evidence.</h2>
-      </div>
-      <div class="metric-grid">
-        <article><strong>0.868</strong><span>Coarse-fixture F1</span><small>9-run shared-evidence aggregate</small></article>
-        <article><strong>0.833</strong><span>Dynamic identity IDF1</span><small>No identity switch in the controlled benchmark</small></article>
-        <article><strong>11/12</strong><span>Event recall</span><small>Across add, motion, disappearance, and transfer events</small></article>
-        <article><strong>0.014</strong><span>False absence</span><small>With geometric visibility gating</small></article>
-      </div>
-      <div class="result-figures">
-        <figure>
-          <img src="static/images/coarse-results.png" alt="Coarse fixture F1 comparison across three environments" loading="lazy">
-          <figcaption>PBD-AG achieves the highest mean coarse-fixture F1 in all three environments.</figcaption>
-        </figure>
-        <figure>
-          <img src="static/images/dynamic-results.png" alt="Dynamic identity and event recall comparison" loading="lazy">
-          <figcaption>Persistent IDs and visibility-gated updates improve identity continuity and event recall.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section-shell deployment-section">
-      <div class="section-heading">
-        <div class="eyebrow">Physical deployment</div>
-        <h2>A traceable world model built from onboard sensing.</h2>
-      </div>
-      <img src="static/images/physical-deployment.png" alt="Physical robot exploration, inspection, mapping, and hierarchical graph output" loading="lazy">
-    </section>
-
-    <section class="abstract section-shell">
-      <div class="eyebrow">Abstract</div>
-      <h2>Persistent scene understanding for long-horizon service robots.</h2>
+    <section id="abstract" class="paper-section narrow">
+      <h2>Abstract</h2>
       <p>Long-horizon service robots require persistent world models that can be built autonomously in unseen environments and revised as task-relevant objects change. Existing methods rely on online mapping, which accumulates localization and observation errors, static scene representations that cannot capture persistent object changes, or holistic vision-language predictions that lack verifiable 3D geometric evidence. We present PBD-AG, a persistent baseline-delta active graph framework that decouples robot-verified stable fixtures from revisable dynamic object events. The robot autonomously bootstraps the structural baseline from onboard exploration and inspects discovered fixtures to ground hierarchical object beliefs. PBD-AG maintains reliability-weighted object states over geometry, semantics, identity, existence, and support relations, using a geometric visibility gate to mitigate false deletions under occlusion. Inspection viewpoints are selected by a graph-conditioned policy that balances target coverage, travel cost, collision risk, and redundant observation. Simulation experiments in multiple environments and under controlled dynamic evaluation show higher aggregate coarse-fixture F1 than capability-matched controls, as well as stronger identity continuity and event recall. A qualitative physical-robot demonstration further illustrates integration with onboard sensing, providing a traceable world model for long-horizon robotic perception.</p>
+    </section>
+
+    <section class="statement-band">
+      <div class="narrow"><p><span>Core idea.</span> Keep a verified structural baseline, record dynamic changes as event deltas, and only treat a missed detection as negative evidence when the object should have been visible.</p></div>
+    </section>
+
+    <section id="method" class="paper-section page-width">
+      <div class="section-intro"><p class="kicker">Method</p><h2>A versioned scene graph grounded by active perception.</h2><p>PBD-AG connects online exploration, fixture-centered inspection, hierarchical grounding, and persistent graph maintenance in one auditable loop.</p></div>
+      <figure class="figure-card wide-figure">
+        <img src="static/images/architecture.png" alt="Modular architecture of PBD-AG" loading="lazy">
+        <figcaption>The PBD-AG pipeline transforms embodied RGB-D and LiDAR observations into a versioned stable-fixture baseline and an append-only log of object events.</figcaption>
+      </figure>
+      <div class="method-steps">
+        <article><span>01</span><div><h3>Bootstrap</h3><p>Explore an unknown environment and discover stable structural fixtures.</p></div></article>
+        <article><span>02</span><div><h3>Inspect</h3><p>Select reachable and informative fixture-centered viewpoints.</p></div></article>
+        <article><span>03</span><div><h3>Ground</h3><p>Build hierarchical object beliefs from close-range RGB-D evidence.</p></div></article>
+        <article><span>04</span><div><h3>Revise</h3><p>Append add, move, reparent, and remove events to persistent memory.</p></div></article>
+      </div>
+    </section>
+
+    <section class="paper-section page-width feature-row">
+      <div class="feature-copy"><p class="kicker">Uncertainty-aware inspection</p><h2>A miss is not evidence unless the object was observable.</h2><p>The visibility gate rejects negative evidence when a predicted object lies outside the view frustum, is occluded, or has insufficient expected pixel support. When more evidence is needed, the robot selects only reachable, informative, and safe viewpoints.</p></div>
+      <figure class="figure-card"><img src="static/images/visibility-inspection.png" alt="Geometric visibility gate and reachable active viewpoint selection" loading="lazy"></figure>
+    </section>
+
+    <section id="results" class="paper-section page-width">
+      <div class="section-intro"><p class="kicker">Results</p><h2>Persistent identity under shared evidence.</h2><p>PBD-AG improves structural reconstruction and preserves dynamic object identity while reducing false absence updates.</p></div>
+      <div class="metric-row" aria-label="Key results">
+        <div><strong>0.868</strong><span>Coarse-fixture F1</span></div><div><strong>0.833</strong><span>Dynamic identity IDF1</span></div>
+        <div><strong>11 / 12</strong><span>Event recall</span></div><div><strong>0.014</strong><span>False absence</span></div>
+      </div>
+      <div class="result-grid">
+        <figure class="figure-card"><img src="static/images/coarse-results.png" alt="Coarse fixture F1 comparison across three environments" loading="lazy"><figcaption>Highest mean coarse-fixture F1 across all three environments.</figcaption></figure>
+        <figure class="figure-card"><img src="static/images/dynamic-results.png" alt="Dynamic identity and event recall comparison" loading="lazy"><figcaption>Persistent IDs and visibility-gated updates improve identity continuity and event recall.</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="demos" class="paper-section page-width">
+      <div class="section-intro"><p class="kicker">Demonstrations</p><h2>From simulation to a physical robot.</h2><p>The same persistent memory abstraction supports autonomous mapping, inspection, and object-state revision across both settings.</p></div>
+      <div class="video-grid">
+        <figure><video controls muted playsinline preload="metadata" poster="static/images/overview.png"><source src="static/videos/simulation-demo.mp4" type="video/mp4">Your browser does not support MP4 video.</video><figcaption><strong>Simulation.</strong> Autonomous exploration, inspection, and persistent updates in unseen indoor environments.</figcaption></figure>
+        <figure><video controls muted playsinline preload="metadata" poster="static/images/physical-deployment.png"><source src="static/videos/real-robot-demo.mp4" type="video/mp4">Your browser does not support MP4 video.</video><figcaption><strong>Physical deployment.</strong> Onboard RGB-D and LiDAR sensing materialize a hierarchical scene graph.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="paper-section page-width deployment">
+      <div class="section-intro"><p class="kicker">Physical deployment</p><h2>A traceable world model built from onboard sensing.</h2></div>
+      <figure class="figure-card wide-figure"><img src="static/images/physical-deployment.png" alt="Physical robot exploration, inspection, mapping, and hierarchical graph output" loading="lazy"></figure>
+    </section>
+
+    <section id="citation" class="paper-section narrow citation">
+      <h2>BibTeX</h2>
+      <pre><code>@article{bao2026pbd_ag,
+  title   = {PBD-AG: Persistent Baseline-Delta Active Graphs with
+             Uncertainty-Aware Inspection for Long-Horizon Service Robots},
+  author  = {Bao, Shuo and Dong, Wei and Zhang, Shuyue and Shang, Ming and
+             Huang, Yuchen and Yu, Han and Xu, Chengjie and Bi, Yiheng and
+             Sun, Kai and Sun, Fuchun and Wang, Xinzhou},
+  year    = {2026},
+  journal = {Preprint, under review}
+}</code></pre>
     </section>
   </main>
 
-  <footer>
-    <p>PBD-AG · Preprint website · 2026</p>
-    <p class="template-credit">Website structure adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> and <a href="https://nerfies.github.io">Nerfies</a>, under CC BY-SA 4.0.</p>
-  </footer>
+  <footer><p>PBD-AG · Preprint website · 2026</p><p>Website structure adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> and <a href="https://nerfies.github.io">Nerfies</a>.</p></footer>
 </body>
 </html>
