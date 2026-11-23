@@ -11,6 +11,7 @@ The public site is designed for GitHub Pages at:
 - Paper: coming after the public preprint is posted
 - arXiv: coming soon
 - Code: planned after acceptance
+- Supplementary PDF: public download not yet provided
 - Simulation and physical-robot demos: included
 
 ## Author markers
@@ -20,7 +21,9 @@ The public site is designed for GitHub Pages at:
 
 ## Updating links
 
-After the arXiv entry and code repository are available, replace the disabled link pills in `index.html` with normal links and add the corresponding citation metadata.
+The resource row contains Paper, arXiv, Code, and Supplementary. Resources without a public URL are explicitly marked **Coming soon**, with no placeholder destinations. Video, Method, and BibTeX are separate in-page navigation links.
+
+To activate a resource, replace its outer `<span>` with an `<a href="PUBLIC_URL">`, remove `is-unavailable`, `role="link"`, `aria-disabled`, and the unavailable `aria-label`, and remove the `Coming soon` text. Use the research implementation repository for Code, not this website repository. Add citation metadata when the public preprint becomes available.
 
 ## Attribution
 
